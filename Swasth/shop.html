@@ -1,0 +1,734 @@
+<!DOCTYPE html> <!--Declares the document type and version of HTML -->
+<html lang="en"> <!-- Specifies the language of the document -->
+<head>
+    <meta charset="UTF-8"> <!-- Declares the character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive design -->
+    <title>Swasth - Good Health and Well-Being</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="css/student 1/style.css"> <!-- Links to an external CSS stylesheet -->
+</head>
+<body id="top">
+    <!-- This line starts a navigation section -->
+    <nav>
+        <!-- This div contains the logo -->
+        <div class="logo">
+            <img src="image/student 1/logo.png " alt="Logo">
+        </div>
+        <!-- This unordered list contains navigation links -->
+        <ul class="nav-links">
+            <li><a href="home.html" class=" transition">Home</a></li>
+            <li><a href="gallery.html" class="transition">Gallery</a></li>
+            <li><a href="shop.html" class="active transition">Shop</a></li>
+            <li><a href="profile.html" class="transition">User Profile</a></li>
+            <li><a href="sitemap.html" class="transition">Sitemap</a></li>
+            <li><a href="feedback.html" class="transition">Feedback</a></li>
+            <li><a href="team.html" class="transition">Team</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section for displaying featured products -->
+    <main>
+        <div id="shop">
+            <!-- Title for the featured products section -->
+            <div class="section_title">
+                <h2>Featured <span>Products</span></h2>
+            </div>
+            <!-- Container for products -->
+            <div class="container">
+                <!-- Product items -->
+                <div class="product_area">
+                    <!-- Wrapper for 3 product items -->
+                    <div class="product_wrapper">
+                        <!-- Form for selecting quantity -->
+                        <!-- Product item 1 -->
+                        <div class="product_item">
+                            <!-- Box containing product details -->
+                            <div class="box">
+                                <!-- Border around the box for styling -->
+                                <div class="box_border transition">
+                                    <!-- Form for the product -->
+                                    <form id="form_1">
+                                        <!-- Product image -->
+                                        <img src="image/student 1/orange_juice.jpg" alt="orange_juice">
+                                        <!-- Name of the product -->
+                                        <div class="item_name">
+                                            <h3>Frobishers Orange Juice<br>250ml Glass Bottle</h3>
+                                        </div>
+                                        <!-- Price of the product -->
+                                        <div class="item_price">£ <span>2</span></div>
+                                        <!-- Quantity selection -->
+                                        <div class="item_quantity">
+                                            <label for="quantity_1">Qty:</label>
+                                            <input type="number" name="quantity" id="quantity_1" value="1" min="1" max="1000">
+                                        </div>
+                                    </form>
+                                        <!-- Button to add product to cart -->
+                                        <div class="add_to_cart">
+                                            <button class="transition" onclick="add_to_cart('1')"><i class="fas fa-shopping-cart"></i>&nbsp;Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Product item 2 -->
+                        <div class="product_item">
+                            <!-- Box containing product details -->
+                            <div class="box">
+                                <!-- Border around the box for styling -->
+                                <div class="box_border transition">
+                                    <!-- Form for the product -->
+                                    <form id="form_2">
+                                        <!-- Product image -->
+                                        <img src="image/student 1/protein_bar.png" alt="protein_bar">
+                                        <!-- Name of the product -->
+                                        <div class="item_name">
+                                            <h3 class="white_space">Protein Bar</h3>
+                                        </div>
+                                        <!-- Price of the product -->
+                                        <div class="item_price">£ <span>8.48</span></div>
+                                        <!-- Quantity selection -->
+                                        <div class="item_quantity">
+                                            <label for="quantity_2">Qty:</label>
+                                            <input type="number" name="quantity" id="quantity_2" value="1" min="1" max="1000">
+                                        </div>
+                                    </form>
+                                        <!-- Button to add product to cart -->
+                                            <div class="add_to_cart">
+                                            <button class="transition" onclick="add_to_cart('2')"><i class="fas fa-shopping-cart"></i>&nbsp;Add to cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!-- Product item 3 -->
+                        <div class="product_item">
+                            <!-- Box containing product details -->
+                            <div class="box">
+                                <!-- Border around the box for styling -->
+                                <div class="box_border transition">
+                                    <!-- Form for the product -->
+                                    <form id="form_3">
+                                        <!-- Product image -->
+                                        <img src="image/student 1/protein_brownie.png" alt="protein_brownie">
+                                        <!-- Name of the product -->
+                                        <div class="item_name">
+                                            <h3 class="white_space">Protein Brownie</h3>
+                                        </div>
+                                        <!-- Price of the product -->
+                                        <div class="item_price">£ <span>10.73</span></div>
+                                        <!-- Quantity selection-->
+                                        <div class="item_quantity">
+                                            <label for="quantity_3">Qty:</label>
+                                            <input type="number" name="quantity" id="quantity_3" value="1" min="1" max="1000">
+                                        </div>
+                                    </form>
+                                    <!-- Button to add product to cart -->
+                                    <div class="add_to_cart">
+                                        <button class="transition" onclick="add_to_cart('3')"><i class="fas fa-shopping-cart"></i>&nbsp;Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Wrapper for 3 product items -->
+                    <div class="product_wrapper" id="margin_up">
+                        <!-- Product item 4 -->
+                        <div class="product_item">
+                            <!-- Box containing product details -->
+                            <div class="box">
+                                <!-- Border around the box for styling -->
+                                <div class="box_border transition">
+                                    <!-- Form for the product -->
+                                    <form id="form_4">
+                                        <!-- Product image -->
+                                        <img src="image/student 1/yoga_mat.png" alt="yoga_mat">
+                                        <!-- Name of the product -->
+                                        <div class="item_name">
+                                            <h3 class="white_space">X-Tone Yoga Exercise Mat</h3>
+                                        </div>
+                                        <!-- Price of the product -->
+                                        <div class="item_price">£ <span>5.99</span></div>
+                                        <!-- Quantity selection -->
+                                        <div class="item_quantity">
+                                            <label for="quantity_4">Qty:</label>
+                                            <input type="number" name="quantity" id="quantity_4" value="1" min="1" max="1000">
+                                        </div>
+                                    </form>
+                                    <!-- Button to add product to cart -->
+                                    <div class="add_to_cart">
+                                        <button class="transition" onclick="add_to_cart('4')"><i class="fas fa-shopping-cart"></i>&nbsp;Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product item 5 -->
+                        <div class="product_item">
+                            <!-- Box containing product details -->
+                            <div class="box">
+                                <!-- Border around the box for styling -->
+                                <div class="box_border transition">
+                                    <!-- Form for the product -->
+                                    <form id="form_5">
+                                        <!-- Product image -->
+                                        <img src="image/student 1/multivitamins.png" alt="multivitamins">
+                                        <!-- Name of the product -->
+                                        <div class="item_name">
+                                            <h3>Boots <br>Multivitamins 240 Tablets</h3>
+                                        </div>
+                                        <!-- Price of the product -->
+                                        <div class="item_price">£ <span>3.60</span></div>
+                                        <!-- Quantity selection -->
+                                        <div class="item_quantity">
+                                            <label for="quantity_5">Qty:</label>
+                                            <input type="number" name="quantity" id="quantity_5" value="1" min="1" max="1000">
+                                        </div>
+                                    </form>
+                                    <!-- Button to add product to cart -->
+                                    <div class="add_to_cart">
+                                        <button class="transition" onclick="add_to_cart('5')"><i class="fas fa-shopping-cart"></i>&nbsp;Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product item 6 -->
+                        <div class="product_item">
+                            <!-- Box containing product details -->
+                            <div class="box">
+                                <!-- Border around the box for styling -->
+                                <div class="box_border transition">
+                                    <!-- Form for the product -->
+                                    <form id="form_6">
+                                        <!-- Product image -->
+                                        <img src="image/student 1/fitness_watch.png" alt="fitness_watch">
+                                        <!-- Name of the product -->
+                                        <div class="item_name">
+                                            <h3 class="white_space">Fitness Watch</h3>
+                                        </div>
+                                        <!-- Price of the product -->
+                                        <div class="item_price">£ <span>19.99</span></div>
+                                        <!-- Quantity selection -->
+                                        <div class="item_quantity">
+                                            <label for="quantity_6">Qty:</label>
+                                            <input type="number" name="quantity" id="quantity_6" value="1" min="1" max="1000">
+                                        </div>
+                                    </form>
+                                    <!-- Button to add product to cart -->
+                                    <div class="add_to_cart">
+                                        <button class="transition" onclick="add_to_cart('6')"><i class="fas fa-shopping-cart"></i>&nbsp;Add to cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Basket section for displaying selected items -->
+                <div class="basket_section">
+                    <!-- Box containing basket details -->
+                    <div class="product_item" id="no_margin">
+                        <div class="box" style="height: 550px;">
+                            <!-- Border around the box for styling -->
+                            <div class="box_border transition" id="order_box">
+                                <!-- Label for the basket section -->
+                                <div class="label_order">
+                                    <h3>Basket</h3>
+                                </div>
+                                <!-- Container for displaying selected items -->
+                                <div id="basket"></div>
+                                <!-- Total price of items in the basket -->
+                                <div class="hidden" id="total_price">
+                                    <div class="total_price">
+                                        <h4>Total Price:</h4>
+                                        <p id="grand_total"></p>
+                                    </div>
+                                    <!-- Buttons for resetting order and checkout -->
+                                    <div class="checkout_buttons">
+                                        <button id="reset_order" class="transition">Reset Order</button>
+                                        <button id="checkout_button" class="no_margin transition">Checkout</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Checkout section for placing orders -->
+        <div id="checkout" class="hidden">
+            <!-- Title for the checkout section -->
+            <div class="section_title">
+                <h2><span>Checkout</span></h2>
+            </div>
+            <!-- Container for checkout form and order summary -->
+            <div class="container" style="justify-content: space-between;">
+                <!-- Checkout form for entering contact, payment, and billing details -->
+                <div class="checkout_form">
+                    <!-- Individual borders for styling -->
+                    <div class="checkout_border" style="margin-top: 0px;">
+                        <!-- Nested borders for styling -->
+                        <div class="second_border">
+                            <div class="third_border">
+                                <!-- Note about required information -->
+                                <div class="note">
+                                    <span>*</span> indicates required information
+                                </div>
+                                <!-- Contact details form -->
+                                <h2>Contact Details</h2>
+                                <!-- Input fields for first name, surname, email, and phone number -->
+                                <form id="contact_form">
+                                    <label for="firstname">First Name: <span>*</span></label><br>
+                                    <input type="text" id="firstname" name="firstname" class="details" oninput="restrict_to_characters(this)" placeholder="Enter firstname" required><br>
+                                    <label for="surname">Surname: <span>*</span></label><br>
+                                    <input type="text" id="surname" name="surname" class="details" oninput="restrict_to_characters(this)" placeholder="Enter surname" required><br>
+                                    <label for="email">Email Address: <span>*</span></label><br>
+                                    <input type="text" id="email" name="email" class="details" placeholder="Enter email" required><br>
+                                    <label for="phone">Phone Number: <span>*</span></label><br>
+                                    <input type="tel" id="phone" name="phone" class="details" maxlength="11" placeholder="Enter phone number 0123456789" required>
+                                    <!-- Buttons for resetting form and save changes -->
+                                    <div class="form_buttons">
+                                        <input type="reset" name="reset" id="reset_info" value="Clear Fields" class="transition">
+                                        <input type="button" name="save_changes" id="save_contact_changes" value="Save Changes" class="transition no_margin">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Individual borders for styling -->
+                    <div class="checkout_border">
+                        <!-- Nested borders for styling -->
+                        <div class="second_border">
+                            <div class="third_border">
+                                <!-- Note about required information -->
+                                <div class="note">
+                                    <span>*</span> indicates required information
+                                </div>
+                                <!-- Payment details form -->
+                                <h2>Payment Details</h2>
+                                <!-- Input fields for card number, card holder, expiry date, and cvv -->
+                                <form id="payment_form">
+                                    <label for="card_number">Card Number: <span>*</span></label><br>
+                                    <input type="text" id="card_number" name="card_number" class="details" maxlength="16" oninput="restrict_to_numbers(this)" placeholder="Please enter 16-digit card number" required><br>
+                                    <label for="card_holder">Cardholder Name: <span>*</span></label><br>
+                                    <input type="text" id="card_holder" name="card_holder" class="details" oninput="restrict_to_characters(this)" placeholder="Enter cardholder name" required><br>
+                                    <label for="expiry_date">Expiry Date: <span>*</span></label><br>
+                                    <input type="text" id="expiry_date" name="expiry_date" class="details" oninput="restrict_to_numbers_and_slash(this)" maxlength="5" placeholder="MM/YY"><br>
+                                    <label for="cvv">CVV: <span>*</span></label><br>
+                                    <input type="text" id="cvv" name="cvv" class="details" maxlength="3" oninput="restrict_to_numbers(this)" placeholder="Enter CVV" required><br>
+                                    <!-- Buttons for resetting form and save changes -->
+                                    <div class="form_buttons">
+                                        <input type="reset" name="reset" id="reset_payments" value="Clear Fields">
+                                        <input type="button" name="save_changes" id="save_payment_changes" value="Save Changes">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Individual borders for styling -->
+                    <div class="checkout_border">
+                        <!-- Nested borders for styling -->
+                        <div class="second_border">
+                            <div class="third_border">
+                                <!-- Note about required information -->
+                                <div class="note">
+                                    <span>*</span> indicates required information
+                                </div>
+                                <!-- Billing address details form -->
+                                <h2>Billing Address</h2>
+                                <!-- Input fields for address, city, postal code, and country -->
+                                <form id="billing_address_form">
+                                    <label for="address">Address: <span>*</span></label><br>
+                                    <input type="text" id="address" name="address" class="details" placeholder="Enter address" required><br>
+                                    <label for="city">City: <span>*</span></label><br>
+                                    <input type="text" id="city" name="city" class="details" placeholder="Enter city" oninput="restrict_to_characters(this)" required><br>
+                                    <label for="postal_code">Postal Code: <span>*</span></label><br>
+                                    <input type="text" id="postal_code" name="postal_code" class="details" placeholder="Enter postal code" required><br>
+                                    <label for="country">Country: <span>*</span></label><br>
+                                    <input type="text" id="country" name="country" class="details" oninput="restrict_to_characters(this)" placeholder="Enter country" required><br>
+                                    <!-- Buttons for resetting form and save changes -->
+                                    <div class="form_buttons">
+                                        <input type="reset" name="reset" id="reset_address" value="Clear Fields">
+                                        <input type="button" name="save_changes" id="save_address_changes" value="Save Changes">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Order summary section displaying selected items and total price -->
+                <div class="order_summary">
+                    <!-- Individual borders for styling -->
+                    <div class="second_border" id="second_border_height">
+                        <div class="third_border" id="third_border_height">
+                            <!-- Title for the order summary -->
+                            <h2>Order Summary</h2>
+                            <!-- Container for displaying selected items -->
+                            <div id="orders"></div>
+                            <!-- Total price of items in the order -->
+                            <div id="sub_total">
+                                <div class="total_price">
+                                    <h4>Total Price:</h4>
+                                    <p id="overall_total"></p>
+                                </div>
+                            </div>
+                            <!-- Button for placing the order -->
+                            <div class="place_order" id="place_order">
+                                <button class="transition">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Back to top button -->
+    <div>
+        <a href="#top" id="scroll">
+            <div class="back_to_top transition">
+                <span>^</span>
+            </div>
+        </a>
+    </div>
+
+     <!-- Footer section with a link to the page editor -->
+     <footer class="footer_all_page">
+        <div class="footer_box">
+            <div class="flex_box">
+                <div class="footer_logo">
+                    <img src="image/student 1/logo.png" alt="logo">
+                    <!-- <br> -->
+                    <p>Swasth project promotes health and well-being through informative content, resources, and community engagement for a happier, healthier lifestyle.</p>
+                </div>
+                <div class="links">
+                    <h2>Links</h2>
+                    <ul>
+                        <li><a href="home.html" class="transition">Home</a></li>
+                        <li><a href="gallery.html" class="transition">Gallery</a></li>
+                        <li><a href="shop.html" class="transition">Shop</a></li>
+                        <li><a href="profile.html" class="transition">User Profile</a></li>
+                        <li><a href="sitemap.html" class="transition">Sitemap</a></li>
+                        <li><a href="feedback.html" class="transition">Feedback</a></li>
+                        <li><a href="team.html" class="transition">Team</a></li>
+                    </ul>
+                </div>
+                <div class="editors">
+                    <h2>Editors</h2>
+                    <ul>
+                        <li><a href="pageEditor_ST1.html" class="transition">Student 1</a></li>
+                        <li><a href="pageEditor_ST2.html" class="transition">Student 2</a></li>
+                        <li><a href="pageEditor_ST3.html" class="transition">Student 3</a></li>
+                        <li><a href="pageEditor_ST4.html" class="transition">Student 4</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright ©2024 Swasth. All Rights Reserved.
+        </div>
+    </footer>
+
+
+    <!-- This script manages a simple shopping cart functionality on a website. -->
+    <script>
+        // Initialize an empty array to store items in the basket.
+        let basket_item_array = [];
+
+        // Function to add an item to the cart.
+        function add_to_cart(id) 
+        {
+            // Get the form associated with the item.
+            let form = document.forms[`form_${id}`];
+
+            // Get the name of the item from the h3 tag inside the form.
+            let item_name = form.querySelector('h3').textContent;
+
+            // Get the quantity of the item from the input field with a specific ID.
+            let item_qty = form.querySelector(`#quantity_${id}`).value;
+
+            // Get the price of the item from the span inside an element with a specific class.
+            let item_price = form.querySelector('.item_price span').textContent;
+
+            // Get the source of the item image.
+            let item_image = form.querySelector('img').src;
+
+            // Get the alternative text of the item image.
+            let item_image_alt = form.querySelector('img').alt;
+
+            // Calculate the subtotal of the item.
+            let sub_total = parseFloat(item_price) * parseFloat(item_qty);
+
+            // Check if the item is already in the basket.
+            let is_item_in_basket = basket_item_array.some(item => item.id === id);
+
+            // If the item is already in the basket, show an alert.
+            if (is_item_in_basket) {
+                alert('Item already added in the basket.');
+            }
+            else 
+            {
+                // If the item is not in the basket, add it to the basket.
+                let basket = document.getElementById('basket');
+                let basket_item = document.createElement('div');
+                basket_item.innerHTML = `<div class="ordered_item"> 
+                                            <img src="${item_image}" id="item_image" alt="${item_image_alt}">
+                                            <p id="item_name">${item_name} <br> 
+                                            <button type="button" class="quantity_btn" onclick="decrease_quantity(${id}, ${item_price})">-</button>
+                                            <input type="text" name="quantity" id="quantity1_${id}" value="1" class="input_cornered" min="1">
+                                            <button type="button" class="quantity_btn" onclick="increase_quantity(${id}, ${item_price})">+</button></p>
+                                            <p id="item_price_${id}">£${sub_total.toFixed(2)}</p>
+                                        </div>`;
+                basket.appendChild(basket_item);
+                // Add the item to the basket_item_array.
+                basket_item_array.push({ id: id, name: item_name, price: item_price, quantity: item_qty, sub_total: sub_total, image: item_image, image_alt: item_image_alt });
+                // Show total price and update it.
+                document.querySelector('#total_price').classList.remove('hidden');
+                update_total_price();
+                console.log(basket_item_array);
+            }
+        }
+
+        // Function to increase the quantity of an item in the cart.
+        function increase_quantity(id, item_price) {
+            let quantity_input = document.getElementById(`quantity1_${id}`);
+            let current_value = parseInt(quantity_input.value);
+            let new_value = current_value + 1;
+            quantity_input.value = new_value;
+            update_quantity(quantity_input, `${id}`, `${item_price}`);
+            update_total_price();
+        }
+        
+        // Function to decrease the quantity of an item in the cart.
+        function decrease_quantity(id, item_price) {
+            let quantity_input = document.getElementById(`quantity1_${id}`);
+            let current_value = parseInt(quantity_input.value);
+            if (current_value > 1) {
+                new_value = current_value - 1;
+                quantity_input.value = new_value;
+                update_quantity(quantity_input, `${id}`, `${item_price}`);
+            }
+            update_total_price();
+        }
+
+        // Function to update the quantity and subtotal of an item in the cart.
+        function update_quantity(item_qty, id, item_price) {
+            let new_quantity = parseInt(item_qty.value);
+            let product_price = parseFloat(item_price);
+            let new_subtotal = new_quantity * product_price;
+
+            // Update quantity and subtotal in the UI.
+            document.getElementById(`item_price_${id}`).textContent = '£' + new_subtotal.toFixed(2);
+            document.getElementById('quantity_' + id).value = new_quantity;
+
+            // Update quantity and subtotal in the basket_item_array.
+            let basket_item_index = basket_item_array.findIndex(item => item.id === id);
+            if (basket_item_index !== -1) {
+                // Update quantity and subtotal in the basket_item_array
+                basket_item_array[basket_item_index].quantity = new_quantity;
+                basket_item_array[basket_item_index].sub_total = new_subtotal;
+            }
+            update_total_price();
+        }
+
+        // Function to update the total price of items in the cart.
+        function update_total_price() {
+            let total_price = 0;
+            basket_item_array.forEach(item => {
+                total_price += parseFloat(item.sub_total)
+            })
+            document.getElementById('grand_total').textContent = '£' + total_price.toFixed(2)
+        }
+
+        // Event listener for resetting the order (emptying the cart).
+        document.getElementById('reset_order').addEventListener('click', function () {
+            basket.innerHTML = ''
+            basket_item_array = []
+            document.getElementById('grand_total').innerHTML = '£0.00'
+        })
+
+        // Event listener for the checkout button.
+        document.getElementById('checkout_button').addEventListener('click', function () {
+            let total_price = 0;
+            // Check if the basket is empty.
+            if(basket_item_array == '')
+            {
+                alert('Please add items to the cart before proceeding to checkout.')
+            }
+            else
+            {
+                // If not empty, show checkout details.
+                document.getElementById('checkout').classList.remove('hidden')
+                document.getElementById('shop').classList.add('hidden');
+                document.getElementById('scroll').href = '#checkout'
+                // Display items in the order summary.
+                document.getElementById('orders').innerHTML = basket_item_array.map(item => {
+                        total_price += parseFloat(item.sub_total);
+                        return `<div class="ordered_item" style="padding-left: 10px; padding-top: 10px;">
+                            <img src="${item.image}" id="item_image" alt="${item.image_alt}">
+                            <p id="item_name">${item.name} <br><span><b>Qty:</b> ${item.quantity}</span></p>
+                            <p id="item_price_${item.id}">£${item.price}</p>
+                            </div>`;
+                            
+                    }).join('');
+                    document.getElementById('overall_total').textContent = '£' + total_price.toFixed(2);
+            }
+        })
+
+        // Function to restrict input to characters only.
+        function restrict_to_characters(input_field) {
+            input_field.value = input_field.value.replace(/[^A-Za-z]/g, '');
+        }
+
+        // Function to restrict input to numbers only.
+        function restrict_to_numbers(input_field){
+            input_field.value = input_field.value.replace(/\D/g, '');
+        }
+
+        // Function to restrict input to numbers and slashes only.
+        function restrict_to_numbers_and_slash(input_field) {
+            input_field.value = input_field.value.replace(/[^\d/]/g, '');
+        }
+
+        // Event listeners for resetting contact, payment, and address information.
+        document.getElementById('reset_info').addEventListener('click', function(){
+            document.getElementById('firstname').value = ''; 
+            document.getElementById('surname').value = '';   
+            document.getElementById('email').value = '';     
+            document.getElementById('phone').value = '';
+        });
+        document.getElementById('reset_payments').addEventListener('click', function(){
+            document.getElementById('card_number').value = ''; 
+            document.getElementById('card_holder').value = '';   
+            document.getElementById('expiry_date').value = '';     
+            document.getElementById('cvv').value = ''; 
+        });
+        document.getElementById('reset_address').addEventListener('click', function(){
+            document.getElementById('address').value = ''; 
+            document.getElementById('city').value = '';   
+            document.getElementById('postal_code').value = '';     
+            document.getElementById('country').value = '';  
+        });
+
+        
+        // Event listener for saving contact details.
+        document.getElementById('save_contact_changes').addEventListener('click', function(){
+            // Check if all required payment fields are filled.
+            let required_fields = ['firstname', 'surname', 'email', 'phone'];
+            for (let field of required_fields) 
+            {
+                let value = document.getElementById(field).value;
+                if (value === "") {
+                    alert("Please fill in all the contact details.");
+                    return;
+                }
+            }
+
+            // Validate phone number length.
+            let phone = document.getElementById('phone').value;
+            if(card_number.length < 10)
+            {
+                alert("Please enter 10 digits phone number!");
+                return;
+            }
+            
+             // Save contact details.
+             let contact_details = {
+                firstname: document.getElementById('firstname').value,
+                surname: document.getElementById('surname').value,
+                email: document.getElementById('email').value,
+                phone: phone
+            };
+            alert('Contact details saved!');
+
+        });
+
+        // Event listener for saving payment details.
+        document.getElementById('save_payment_changes').addEventListener('click', function(){
+            // Check if all required payment fields are filled.
+            let required_fields = ['card_number', 'card_holder', 'expiry_date', 'cvv'];
+            for (let field of required_fields) 
+            {
+                let value = document.getElementById(field).value;
+                if (value === "") {
+                    alert("Please fill in all the payment deatils.");
+                    return;
+                }
+            }
+
+            // Validate card number length.
+            let card_number = document.getElementById('card_number').value;
+            if(card_number.length < 16)
+            {
+                alert("Please enter 16 digits card number!");
+                return;
+            }
+
+            // Validate CVV length.
+            let cvv = document.getElementById('cvv').value;
+            if (cvv.length < 3) {
+                alert("Please enter a 3-digit CVV!");
+                return;
+            }
+
+            // Save payment details.
+            let payment_details = {
+                card_number: card_number,
+                card_holder: document.getElementById('card_holder').value,
+                expiry_date: document.getElementById('expiry_date').value,
+                cvv: cvv
+            };
+            alert('Payment details saved!');
+        });
+
+        // Event listener for saving address details.
+        document.getElementById('save_address_changes').addEventListener('click', function(){
+            // Check if all required address fields are filled.
+            let required_fields = ['address', 'city', 'postal_code', 'country'];
+            for (let field of required_fields) {
+                let value = document.getElementById(field).value;
+                if (value === "") {
+                    alert("Please fill in all the billing address details.");
+                    return;
+                }
+            }
+           
+            // Save address details.
+            let address_details = {
+                address: document.getElementById('address').value,
+                city: document.getElementById('city').value,
+                postal_code: document.getElementById('postal_code').value,
+                country: document.getElementById('country').value
+            };
+            alert('Billing address details saved!');
+        });
+
+        // Event listener for placing the order.
+        document.getElementById('place_order').addEventListener('click', function(){
+            // Check if all required fields are filled.
+            let required_fields = ['firstname', 'surname', 'email', 'phone', 'card_number', 'card_holder', 'expiry_date', 'cvv', 'address', 'city', 'postal_code', 'country'];
+            for (let field of required_fields) 
+            {
+                let value = document.getElementById(field).value;
+                if (value === "") {
+                    alert("Please fill in all the required fields.");
+                    return;
+                }
+            }
+            // Inform the user that the order has been placed.
+            alert('Your order has been placed.');
+            // Redirect the user to the home page.
+            window.location.href = 'home.html';
+        });
+
+        // Function to handle scroll event
+        window.onscroll = function() {
+            // Get the back to top button element
+            var scrollButton = document.getElementById("scroll");
+            // Check if scroll position is greater than 100
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                // If scroll position is greater than 100, display the button
+                scrollButton.style.display = "block";
+            } else {
+                // If scroll position is not greater than 100, hide the button
+                scrollButton.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>

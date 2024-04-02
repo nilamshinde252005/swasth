@@ -1,0 +1,493 @@
+  /*                                        homepage                                                */
+  .body {
+      font-size: 19px;
+      margin: 0;
+      padding: 0;
+  }
+  nav {
+      background-color: #75b189;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+  }
+  .logo{
+      margin-left: 140px;
+  }
+  .logo img {
+      width: 120px;
+      height: auto;
+  }
+  .nav-links{
+      margin-right: 100px;
+  }
+  .nav-links li {
+      display: inline;
+      margin-right: 50px;
+  }
+  .nav-links li a {
+      color: #f6eeee;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 4px;
+  }
+  .nav-links li a:hover {
+      background-color: #518e65;
+      padding: 4px;
+      border-radius: 5px;
+  }
+  .transition{
+      transition: 0.5s;
+  }
+  .nav-links li a.active {
+      background-color: #b2aee5;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+  }
+
+  figcaption {
+      text-align: center;
+  }
+
+  table {
+      border-collapse: collapse;
+      float: left;
+      margin-left: 3%;
+  }
+
+  td {
+      border: 1px dotted black;
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+      color: #5f9a73;
+      font-size: 25px;
+      font-style: oblique;
+  }
+
+  .onclick {
+      background-color: #eeb0b0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+  }
+
+  #output {
+      margin-left: 11%;
+      margin-top: 3%;
+      color: rgb(148, 145, 145);
+      flex: 1;
+      margin-bottom: 20px;
+  }
+
+  #outputImg {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 20px;
+      flex: 1;
+  }
+  #outputImg img{
+    width: 400px;
+    height: 400px;
+  }
+
+  #outputContainer {
+      display: flex;
+      align-items: flex-start;
+    margin: 0;
+  }
+
+  .container {
+      position: relative;
+      text-align: center;
+  }
+
+  .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+  }
+
+  /* Next & previous buttons */
+  .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: #77e09a;
+      font-weight: bold;
+      font-size: 28px;
+      transition: 0.6s ease; 
+      left: 0;
+  }
+
+  .content_pages{
+    display: flex;
+    text-align: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content_pages a{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* Position the "next button" slightly away from the right edge */
+  .next {
+      right: 5%;
+      border-radius: 3px 0 0 px;
+  }
+
+  /* Caption text */
+  .text {
+      color: #000000;
+      font-size: 25px;
+      position: absolute;
+      top: 155px;
+      width: 100%;
+      text-align: center;
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+      color: #000000;
+      font-size: 22px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 160px;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+      background-color: #717171;
+  }
+  
+
+ 
+ /*                                        Form page                                           */
+
+ .topnav2 {
+    background-color: #75b189;
+    overflow: hidden;
+   
+}
+
+.topnav2 a {
+    float: left;
+    color: #f6eeee;
+    text-align: center;
+    padding: 2% 57px;
+    font-size: 24px;
+}
+
+.topnav2 a:hover {
+    background-color: #518e65;;
+}
+
+.topnav2 a.active {
+    background-color: #b2aee5;
+    color: white;
+}
+
+ .text2{
+    color: #4b86b4;
+}
+
+.table2 {
+    border-collapse: collapse;
+    width: 70%;
+    background-color: white;
+}
+
+.th2, .td2 {
+    border: 1px solid; /* Set the border for th and td */
+    padding: 5px;
+    width: 180px;background-color:white ;
+}
+
+.th2{
+    background-color: #4b86b4 ;
+}
+
+.star-rating input[type="radio"] {
+display: none; /* Hide the radio buttons */
+}
+
+.star-rating label {
+display: inline-block;
+font-size: 38px; /* Adjust the size of the stars */
+cursor: pointer;
+color: #ccc; /* Default star color */
+margin-right: 10px;
+}
+
+.star-rating input[type="radio"]:checked + label {
+color: #adcbe3; /* Change color of checked stars */
+}
+
+.circle-rating {
+display: flex; /* all circle to bw on the same line */
+}
+
+.circle-rating input[type="radio"] {
+display: none;
+}
+
+/* css for the nums inside the circle */
+.circle-rating label {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 30px; /* Adjust size of circle */
+height: 30px; /* Adjust size of circle */
+border-radius: 50%; /* Make the label a circle */
+border: 2px solid #ccc; /* Border color */
+margin-right: 10px; /* Adjust spacing between circles */
+font-size: 14px; /* Adjust font size of numbers */
+cursor: pointer;
+
+}
+
+.circle-rating input[type="radio"]:checked + label {
+background-color:#adcbe3; /* Change background color of selected circle */
+}
+
+ .feedback{
+    border: 1px solid; 
+    padding: 5%;
+    width: 40%;
+}
+
+form{
+    margin-left: 22%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 22px;
+}
+.body2{
+    background-color: #e7eff6;border: 5px solid;border-color:#2a4d69;
+}
+
+
+/* 4)                                  editor page                                             */
+        .content-container4 {
+            width: 40%;
+            margin-right: 20px;
+            float: left;
+           
+        }
+
+        .feedback-container4 {
+            width: 40%;
+            margin-left: 20px;
+            float: right;
+            margin-right: 55px;
+            
+        }
+
+        /* Clear floats */
+        .clearfix4::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+       
+        .body4{
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            background-color: rgb(245, 233, 213);
+        }
+
+/*                                     content pg                                              */        
+         .topnav3 {
+            background-color: #87b6d3;
+            overflow: hidden;
+           
+        }
+
+        .topnav3 a {
+            float: left;
+            color: #f6eeee;
+            text-align: center;
+            padding: 2% 59px;
+            font-size: 24px;
+        }
+
+        .topnav3 a:hover {
+            background-color: #7099ac;
+        }
+
+        .topnav3 a.active {
+            background-color: #b2aee5;
+            color: white;
+        }
+
+        .img13 {
+            padding-top: 5%;
+            width: 11%;
+            padding-left: 18%;
+            float: left;
+        }
+
+        .p13 {
+            padding-top: 5%;
+            padding-left: 32%;
+            padding-bottom: 5%;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .img23 {
+            padding-top: 5%;
+            width: 11%;
+            padding-right: 18%;
+            float: right;
+        }
+
+        .column13 {
+            font-style: monaco, monospace;
+            float: left;
+            width: 23.33%;
+            margin-left: 90px;
+            padding: 5px;
+            border-style: inset;
+            border-spacing: 10px;
+            border-radius: 20px;
+            background-color: white;
+        }
+
+        .row13:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .p23{
+            background-color: aliceblue;
+            border-style: inset;
+            border-width: 16px 16px;
+            border-radius: 20px;
+            font-size: 24px;
+            margin-left: 56%;
+            margin-right: 3%;
+        }
+        .column23 {
+            font-style: monaco, monospace;
+            border-style: inset;
+            border-spacing: 20px;
+            border-radius: 20px;
+            font-size: 23px;
+            margin-left: 259px;
+            width: 53.33%;
+            padding: 5px;
+        
+        }
+        .p3{
+            border-style: inset;
+            border-width: 16px 10px;
+            border-radius: 10px;
+            font-size: 24px;
+            margin-right: 56%;
+            margin-left: 3%;
+            background-color: aliceblue;
+        }
+       .body3{
+            background-color: rgb(231, 223, 223);
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+
+
+/* footer */
+.footer_all_page{
+    background-color: #75b189;
+    color: white;
+    padding: 50px 20px;
+    clear: both;
+  }
+  .footer_box{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
+  }
+  .flex_box{
+    display: flex;
+  }
+  .footer_logo{
+    width: 33.33%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer_logo img{
+    width: 160px;
+    padding-left: 70px;
+  }
+  .footer_logo p{
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  .footer_box li{
+    list-style: none;
+    margin: 10px 10px;
+    font-size: 17px;
+  }
+  .footer_box a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  .footer_box h2{
+    margin-left: 10px;
+    color: black;
+  }
+  .footer_box a:hover{
+    color: black;
+    padding-left: 10px;
+  }
+  .links{
+    width: 33.33%;
+    padding-left: 80px;
+    padding-right: 15px;
+  }
+  .links h2{
+    padding-left: 38px;
+  }
+  .editors{
+    width: 33.33%;
+    padding-right: 15px;
+  }
+  .editors h2{
+    padding-left: 38px;
+  }
+  .copyright{
+    text-align: center;
+    font-size: 18px;
+  }
+  

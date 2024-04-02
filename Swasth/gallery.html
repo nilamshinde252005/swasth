@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/student 4/gallery.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="image/student 4/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html" class="transition">Home</a></li>
+            <li><a href="gallery.html" class="active transition">Gallery</a></li>
+            <li><a href="shop.html" class="transition">Shop</a></li>
+            <li><a href="profile.html" class="transition">User Profile</a></li>
+            <li><a href="sitemap.html" class="transition">Sitemap</a></li>
+            <li><a href="feedback.html" class="transition">Feedback</a></li>
+            <li><a href="team.html" class="transition">Team</a></li>
+        </ul>
+    </nav>
+    <h1>Gallery</h1>
+    <!--  when the image is clicked -->
+    <div class="full-img" id="imgBox">
+        <img src="image/student 4/food.jpg" alt="food" id="fullimg">
+        <span onclick="closeFullimg()">x</span>
+        <span id="Description"></span>
+    </div>
+<!--images-->
+<h2>Nutrition & Health</h2>
+    <div class="Gallery1">
+        <img src="image/student 4/food.jpg" alt="Strwberries and other berries" data-description="Having a balanced diet is very important! Berries are some of the most common fruits; they are a great source of fiber, including soluble fiber. They are also a simple and sweet snack. One of the major benefits of having a fruit diet is that it can help protect you against cancer, diabetes, and heart attacks.🍓🫐" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/smootie.jpg" alt="Friut smoothie" data-description="Smoothies are one of the best fruit drinks. This is because you can make them as thick as you like. For example, if you would like it to be more like yogurt, then you make it thicker. If you want it to be like a normal juice, then you don’t make it that thick. There are a number of benefits from consuming smoothies: they increase fiber intake, contribute towards your 5-a-day, and also boost your vitamin C levels.🧃" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/food3.jpg" alt="Fish and rice" data-description="Having fish in your meals is very important, this is because fish is rich in calcium and phosphorus and it is also a great source of minerals, such as iron, zinc, iodine, magnesium, and potassium. It is also tasty! Also having rice at least 1 a week is a great way to keep your body healthy. This is because rice is very rich in carbohydrates, this is the body’s main fuel source. 🐟🍚" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/pasta.jpg" alt="Pasta" data-description="Any kind of pasta is part of a good diet. This is because pasta is made from grains, one of the basic food groups in a healthy diet. It’s a great source of energy and can provide fiber. It is also a great way to lose weight, as you don’t eat it with bread.🍝" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+     </div>
+     <h2>Physical activity</h2>
+     <div class="Gallery2">    
+        <img src="image/student 4/gym.jpg" alt="Gym" data-description="Regular physical activity is one of the most important things you can do to improve your health and stay fit. Going to the gym can improve your brain health, help manage weight, reduce the risk of diseases, strengthen bones and muscles, and improve your ability to do everyday tasks.💪🏻🤸🏻‍♀️" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/Running.jpg" alt="Running" data-description="Regular physical activity such as running can significantly improve mental health, self-confidence, healthy aging, and quality of life. It is also a very fun way of staying active because you can set personal goals, such as reaching 5k. You might not be able to achieve that at first, but within a week, you can reach this goal, which will make you very happy and proud. Additionally, it is a great way to lose weight and gain muscle and stamina.🏃🏻" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/streach.jpg" alt="Streaching or yoga" data-description="Yoga is a practice that offers numerous benefits for both the body and the mind. Through gentle stretches, controlled breathing, and mindfulness techniques, yoga helps to improve flexibility, strengthen muscles, and promote relaxation. Not only does it enhance physical health by increasing balance and coordination, but it also supports mental well-being by reducing stress and anxiety.🧘🏻‍♀️" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/volley.jpg" alt="Volleyball" data-description="Volleyball is an exciting sport that combines elements of teamwork, skill, and strategy. Played on a court divided by a net, the objective is to rally the ball over the net and score points by grounding it in the opponent's court. With its fast-paced action and dynamic gameplay, volleyball offers a thrilling experience for players and spectators alike. It not only enhances physical fitness by improving agility, coordination, and cardiovascular endurance but also fosters important social skills such as communication, cooperation, and sportsmanship. This is just one example of a great sport.🏐 " onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+    </div>
+    <h2>Mental Health</h2>
+    <div class="Gallery3">   
+        <img src="image/student 4/relax.jpg" alt="Relaxing" data-description="Relaxation is crucial for our well-being. It gives our minds and bodies a chance to unwind from the stresses of daily life, allowing us to recharge and rejuvenate. Whether it's taking a leisurely walk in nature, practicing deep breathing exercises, or simply enjoying a quiet moment with a good book, finding time to relax is essential. By incorporating relaxation into our routines, we can lower stress levels, improve sleep quality, and enhance overall mental and physical health. " onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/bed.jpg" alt="Sleeping" data-description="Sleeping is vital for our health and well-being. It's during sleep that our bodies repair and regenerate, our brains process memories and emotions, and our immune systems strengthen. Getting enough quality sleep is essential for maintaining optimal physical and mental functioning. It helps improve concentration, mood, and overall cognitive performance. Additionally, adequate sleep supports cardiovascular health, weight management, and immune function.😴🛏️" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/reading.jpg" alt="Reading" data-description="Reading is a wonderful activity that offers numerous benefits for our minds and overall well-being. It stimulates our imagination, expands our knowledge, and enhances our cognitive abilities. Whether we're delving into a captivating novel, exploring a thought-provoking non-fiction book, or immersing ourselves in poetry, reading provides a welcome escape from the stresses of everyday life. It can transport us to different worlds, introduce us to new perspectives, and spark creativity. 📖" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+        <img src="image/student 4/picnic.jpg" alt="Picnic" data-description="Picnics offer a delightful way to enjoy the outdoors and create lasting memories with loved ones. Whether it's a sunny day in the park, a cozy spot by the lake, or a scenic mountain vista, picnics allow us to unwind and savor the simple pleasures of life. Packing a basket full of delicious snacks, sandwiches, and refreshing beverages adds to the excitement of the adventure. It's a chance to escape the hustle and bustle of daily life, connect with nature, and appreciate the beauty of our surroundings.🧺" onclick="openFullimg(this.src, this.getAttribute('data-description'))">
+    </div> 
+
+<!---Java script -->
+<script>
+    var imgBox = document.getElementById("imgBox")
+    var fullimg = document.getElementById("fullimg");
+    var Description = document.getElementById("Description")
+
+    function openFullimg(pic, description){
+        imgBox.style.display = "flex";
+        fullimg.src = pic;
+        Description.textContent = description;
+    }
+    function closeFullimg(){
+        imgBox.style.display = "none";
+        Description.textContent = "";
+    }
+</script>
+
+<footer class="footer_all_page">
+    <div class="footer_box">
+        <div class="flex_box">
+            <div class="footer_logo">
+                <img src="image/student 4/logo.png" alt="logo">
+                <!-- <br> -->
+                <p>Swasth project promotes health and well-being through informative content, resources, and community engagement for a happier, healthier lifestyle.</p>
+            </div>
+            <div class="links">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="home.html" class="transition">Home</a></li>
+                    <li><a href="gallery.html" class="active transition">Gallery</a></li>
+                    <li><a href="shop.html" class="transition">Shop</a></li>
+                    <li><a href="profile.html" class="transition">User Profile</a></li>
+                    <li><a href="sitemap.html" class="transition">Sitemap</a></li>
+                    <li><a href="feedback.html" class="transition">Feedback</a></li>
+                    <li><a href="team.html" class="transition">Team</a></li>
+                </ul>
+            </div>
+            <div class="editors">
+                <h2>Editors</h2>
+                <ul>
+                    <li><a href="pageEditor_ST1.html" class="transition">Student 1</a></li>
+                    <li><a href="pageEditor_ST2.html" class="transition">Student 2</a></li>
+                    <li><a href="pageEditor_ST3.html" class="transition">Student 3</a></li>
+                    <li><a href="pageEditor_ST4.html" class="transition">Student 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        Copyright ©2024 Swasth. All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>
